@@ -1,7 +1,9 @@
 <template>
   <div class="main-wrapper">
     <div class="text-black" style="color: black;">
+      <v-btn>sdsd</v-btn>
       <div v-for="i in 100">Ready to use</div>
+      
     </div>
   </div>
 </template>
@@ -21,12 +23,10 @@
   overflow-y: scroll;
 }
 
-/* Hide scrollbar for webkit browsers */
 #app::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for Firefox */
 #app {
   scrollbar-width: none; /* Firefox */
 }
