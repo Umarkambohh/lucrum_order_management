@@ -18,6 +18,8 @@ export default defineConfig(({ command }) => ({
   },
   server: {
     port: 8080,
+    // App HTML is served by Frappe (:8000) in dev, so force asset URLs to Vite origin.
+    origin: 'http://127.0.0.1:8080',
     cors: true,
     watch: {
       usePolling: true,

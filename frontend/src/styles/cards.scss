@@ -1,0 +1,25 @@
+// Card styles with theme support
+// .v-card {
+//   border: 1px solid rgb(var(--v-theme-card-border)) !important;
+//   background-color: rgb(var(--v-theme-card-bg)) !important;
+//   color: rgb(var(--v-theme-on-background)) !important;
+//   transition: all 0.2s ease-in-out;
+// }
+
+// Ensure proper text contrast in cards
+.v-card-title,
+.v-card-subtitle,
+.v-card-text {
+  color: inherit !important;
+}
+
+// Hover effect for cards
+.v-card:not(.no-hover):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+// Remove default elevation when using borders
+.v-card--variant-elevated {
+  box-shadow: none !important;
+}
